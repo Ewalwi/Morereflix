@@ -68,6 +68,34 @@ const spaceNews = [
   "Experiments in space biology conducted in orbit lead to the development of new medical treatments",
   "A project to colonize the asteroid belt for resource extraction"
 ];
+const blackHistoryMonth = ["Racial tensions are increasing in the United States following the death of George Floyd.", 
+"Protests against racism and racial segregation are multiplying worldwide.", 
+"A study reveals that ethnic minorities are more affected by poverty and social exclusion.", 
+"The issue of systemic discrimination is at the heart of political debates.", 
+"Cases of workplace discrimination are being publicized.", 
+"A university is strengthening its inclusion policies to combat segregation.", 
+"A company is accused of discriminatory practices towards its employees.", 
+"A report reveals alarming statistics on social segregation in a city.", 
+"A school is implementing programs to promote diversity and inclusion.", 
+"Public figures are speaking out against racism and discrimination.", 
+"A law is passed to combat segregation in public places.", 
+"A film on racial segregation wins a prestigious award.", 
+"An association denounces discriminatory practices by a public administration.", 
+"An incident of segregation shocks public opinion.", 
+"An awareness campaign against racism is launched on social media.", 
+"Statistics show the differential treatment between different ethnic communities.", 
+"A study reveals the impact of segregation on the mental health of discriminated individuals.", 
+"Artists are taking a stand against segregation in the entertainment industry.", 
+"A company faces accusations of hiring discrimination.", 
+"Measures are being taken to promote access to education for ethnic minorities.", 
+"An investigation reveals cases of segregation in the judicial system.", 
+"International organizations publish alarming reports on segregation worldwide.", 
+"Political debates stir the parliament on the issue of ethnic discrimination.", 
+"A human rights advocacy group denounces segregationist practices of a country.", 
+"A communications company launches an anti-discrimination campaign.", 
+"A celebrity shares their experience of segregation in the artistic community.", 
+"Bills are proposed to strengthen the fight against racial segregation.", "An NGO organizes an event to raise public awareness about diversity.", "A television show addresses the theme of segregation in modern society.", "Researchers publish a study on the impact of discrimination on self-esteem.", "A city adopts measures to promote social mixity in its neighborhoods.", "Political figures call for unity in the face of rising segregation.", "A report highlights the discriminations faced by LGBT+ individuals.", "Laws are passed to combat the precariousness of discriminated populations.", "A fashion company is accused of promoting racist stereotypes in its advertising campaigns.", "A school organizes workshops on cultural diversity to raise awareness among students about segregation.", "A court convicts a case of racial discrimination within a public institution.", "A charity launches a campaign to support victims of segregation.", "Peaceful demonstrations are organized to denounce discriminatory practices in society.", "A radio show invites experts to discuss the issue of segregation in the world.", "A survey reveals that the majority of respondents are in favor of anti-discrimination measures.", "A foundation launches a mentoring program to support young people from ethnic minorities.", "A magazine publishes a special feature on cultural diversity to raise awareness among its readers about the issue of segregation.", "A documentary series explores the different aspects of racial discrimination in contemporary society.", "A technology company is criticized for its lack of diversity within its teams.", "A UN report highlights the harmful consequences of segregation on the development of the countries concerned.", "Celebrities publicly commit against segregation and encourage their fans to do the same.", "An online petition collects thousands of signatures to demand concrete measures against discrimination.", "An international organization launches an awareness campaign to combat gender-related discriminations.", "A government announces measures to promote the integration of immigrant populations into society."
+];
 
 function playBtn(choice) {
   const audio = audios[choice];
@@ -85,8 +113,11 @@ function search(spaceNews) {
     const random = spaceNews[Math.floor(Math.random() * spaceNews.length)];
     alert("An original result was found! It's: '" + random + "'");
     document.getElementById("angle").innerText = String(random);
-  }
-  else {
+  } else if (searchBar.value === "black history month") {
+    const random = blackHistoryMonth[Math.floor(Math.random() * blackHistoryMonth.length)];
+    alert("An original result was found! It's: '" + random + "'");
+    document.getElementById("angle").innerText = String(random);
+  } else {
     alert("No result found. Please try again.");
     document.getElementById("angle").innerText = "No result found. Please try again.";
   }
