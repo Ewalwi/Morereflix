@@ -145,7 +145,7 @@ h4 {
 }
 
 .infoBtn::after { 
-  content: "Usable databases are: space...";
+  content: "Usable databases are: space, black history month...";
   font-size: 10px;
   font-family: fantasy;
   position: absolute;
