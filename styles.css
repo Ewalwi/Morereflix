@@ -1,0 +1,49 @@
+body {
+    background-color: #000000;
+}
+
+.netflix-logo {
+    font-family: 'Netflix Sans', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    overflow: hidden;
+  }
+  
+  .letter {
+    color: #e50914;
+    position: relative;
+    animation: Netflix-animation 3s forwards;
+    animation-delay: calc(0.1s * var(--index));
+  }
+  
+  @keyframes Netflix-animation {
+    0% {
+      clip-path: polygon(0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0);
+      transform: translateY(0);
+    }
+    50% {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 60%, 33% 60%, 33% 70%, 0 70%, 0 80%, 33% 80%, 33% 90%, 0 90%, 0 100%, 0 100%, 0 100%);
+      transform: translateY(-20px);
+    }
+    100% {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%);
+      transform: translateY(0);
+    }
+  }
+  
+  .letter:nth-child(1) { --index: 1; }
+  .letter:nth-child(2) { --index: 2; }
+  .letter:nth-child(3) { --index: 3; }
+  .letter:nth-child(4) { --index: 4; }
+  .letter:nth-child(5) { --index: 5; }
+  .letter:nth-child(6) { --index: 6; }
+  .letter:nth-child(7) { --index: 7; }
+  .letter:nth-child(8) { --index: 8; }
+  .letter:nth-child(9) { --index: 9; }
+  .letter:nth-child(10) { --index: 10; }
+  .letter:nth-child(11) { --index: 11; }
