@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylemain.css">
+    <link rel="icon" href="../ressources/Morereflix_logo.png" type="image/x-icon">
+    <script src="script.js"></script>
+    <title>Morereflix</title>
+</head>
+<body>
+    <header>
+        <img src="../ressources/Morereflix.png" alt="logo_morereflix" onclick="window.location.href='../index.html'">
+        <button class="play" onclick='playBtn(0)'><strong>▶</strong></button>
+    </header>
+    <div class="verification">
+        <input class="secretInput" type="password" id="password" placeholder="Enter password">
+        <button class="btnCard verif" onclick="addCard()">Enter</button>
+    </div>
+    <div class="cardsMenu">
+        <div class="card">
+            <div class="AMISSE">
+                <h2>AMISSE</h2>
+                <button class="infoBtn">i</button>
+            </div>
+            <h4>Angle Morere Intergalactical Style Search Engine</h4>
+            <div class="inputAMISSE"> 
+                <input type="text" class="searchBar" placeholder="Enter your topic here...">
+                <button class="searchBtn" onclick="search(spaceNews)"><img class="search" src="../ressources/search.png"></button>
+            </div>
+        </div>
+        <div class="card">
+            <h2>My angle</h2>
+            <h4 id="angle">Searches you make are registered here !</h4>
+        </div>
+        <div class="card" id="LunarBase" onclick="mainCard('LunarBase')">
+            <h2>Lunar Base</h2>
+            <h4>Click the card to get more information</h4>
+        </div>
+        <div class="card">
+            <h2>Morereflix remix long version</h2>
+            <button class="play btnCard" onclick='playBtn(1)'>Play song now</button>
+        </div>
+        <div class="card" id="Sitiography" onclick="mainCard('Sitiography')">
+            <h2>Sitiography</h2>
+            <h4>Click the card to get more information</h4>
+        </div>
+        <div class="card myCard">
+            <h2>My card</h2>
+            <button class="btnCard" onclick="getValue()">Click here to get your card's data</button>
+        </div>
+    </div>
+    <div class="endPage">
+        <p>© 2024 Morereflix. All Rights Reserved</p>
+        <button class="Add" onclick="verification()">+</button>
+    </div>
+</body>
+</html>
