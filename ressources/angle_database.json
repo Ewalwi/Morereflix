@@ -2,7 +2,8 @@
     "database": {
         "spaceNews": {
             "type": "spaceNews",
-            "value": ["NASA sends the first humanned mission to Mars",
+            "value": [
+                "NASA sends the first humanned mission to Mars",
                 "A new potentially habitable planet discovered in a nearby star system",
                 "A private company launches a satellite to map the surface of the Moon",
                 "Astronauts conduct a spacewalk to repair a damaged space telescope",
@@ -64,7 +65,7 @@
                 "A joint mission between NASA and China to explore the far reaches of the solar system",
                 "Experiments in space biology conducted in orbit lead to the development of new medical treatments",
                 "A project to colonize the asteroid belt for resource extraction"
-              ]
+            ]
         }
     }
 }
