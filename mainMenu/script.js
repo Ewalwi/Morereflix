@@ -154,4 +154,8 @@ function mainCard(card) {
   }
 }
 
-history.replaceState({}, null, "/"); // remplace dans l'historique l'URL actuelle sur lequel on est (donc l'URL affichée par le navigateur)
+if (location.href.indexOf('Morereflix') > 0) { // si le script.js est lancé depuis un environnement virtuel ou depuis le site
+  history.replaceState({}, null, "/Morereflix/"); // remplace dans l'historique l'URL actuelle sur lequel on est (donc l'URL affichée par le navigateur)
+} else {
+  history.replaceState({}, null, "/"); // remplace dans l'historique l'URL actuelle sur lequel on est (donc l'URL affichée par le navigateur)
+}
