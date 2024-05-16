@@ -9,5 +9,5 @@ function createCard() {
     localStorage.setItem('createResult', json);
 
     alert('Card created!')
-    document.querySelector(".createCard"). innerHTML = "Card created!<br><br><br><a href='../mainMenu/'>Back</a>";
+    document.querySelector(".createCard"). innerHTML = "Card created!<br><br><br><a href='../mainMenu/menu.html'>Back</a>";
 }
