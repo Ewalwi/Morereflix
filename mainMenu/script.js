@@ -151,6 +151,14 @@ function mainCard(card) {
     htmlContent = '<div class="card mainCard" style= "cursor: default"><div class="backBtnContainer"><button class="btnCard backBtn" onclick="window.location.href=\'../mainMenu/menu.html\'">⬅ Back</button></div><h2>Lunar Base visit</h2><br></br><iframe src="https://skybox.blockadelabs.com/e/7c06664510ff62638280b19e102a6023" width=700 height=700 style="border:0;" allow="fullscreen"></iframe></div>';
   }
 
+  if (MediaDeviceInfo.prototype === "android" && window.orientation === 0) {
+    htmlContent = `<div class="androidRotate">
+    <h1>Oops, your device does not support this functionality</h1>
+    <h2>Please rotate your device to landscape mode or change your current device to a computer</h2>
+    <img src="../ressources/rotate.png" alt="android">
+</div>`
+  }
+
   document.querySelector(".cardsMenu").innerHTML = htmlContent;
 }
 
