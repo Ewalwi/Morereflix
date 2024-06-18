@@ -97,7 +97,7 @@ iframe {
   transition: 0.3s all ease-in-out;
 }
 
-.card:hover {
+.card:not(.lunarbase):hover {
   transform: scale(1.1);
   border: 3px solid #fd1818;
 }
