@@ -128,7 +128,7 @@ function verification() {
   document.querySelector(".verification").style.visibility = "visible";
 }
 function addCard() {
-  if (document.querySelector(".secretInput").value === "MorereStylePassword") {
+  if (document.querySelector(".secretInput").value === "StephaneMorerePswrd") {
     alert("Correct password ! Redirecting...")
     window.location.href = "../create/createform.html";
   } else {
